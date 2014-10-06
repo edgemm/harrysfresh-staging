@@ -76,8 +76,7 @@ p code {display: inline;}
 h1 {font-weight:normal;}
 a {
 	font-weight:normal !important;
-	/*color:#506c23;*/
-	color: #ea7642;
+	color:#506c23;
 }
 
 body {
@@ -124,16 +123,6 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	float: right;
 }
 
-.page-fullWidth div.page {
-	padding: 0;
-}
-
-.centered-content,
-.center-children > p {
-	padding-right: 30px;
-	padding-left: 30px;
-}
-
 /*#content {
 	padding-top:30px;
 }*/
@@ -158,7 +147,7 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 #footer {
 	font-size: .9em;
 	margin-top:10px;
-	color:#523629;
+	color:#ffffff;
 }
 
 #footer strong a {
@@ -168,7 +157,7 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 }
 
 #footer a {
-	color:#523629;
+	color:#ffffff;
 	text-decoration:none;
 	border:none;
 	padding:5px 0;
@@ -379,7 +368,7 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	p.lead { font-size: 21px; line-height: 27px; color: #777;  }
 
 	em { font-style: italic; }
-	strong { font-weight: bold; color: #523629; }
+	strong { font-weight: bold; color: #333; }
 	small { font-size: 80%; }
 
 /*	Blockquotes  */
@@ -718,7 +707,7 @@ a.more-link {
 		padding: 0px 20px;
 		line-height: 29px;
 		margin: 0;
-		background: #f7996e;
+		background: #949c50;
 		font-size: 16px;
 		font-weight:normal;
 		color:#fff;
@@ -730,7 +719,7 @@ a.more-link {
 		border-top-right-radius: 7px; 
  }
 	ul.tabs li a.active, ul.tabs li a.active:hover {
-		background: #ef6223;
+		background: #506c23;
 
 		position: relative;
 		border-right-width: 1px;
@@ -738,7 +727,7 @@ a.more-link {
 		color: #fff;
 }
 ul.tabs li a:hover {
-	background-color:#f18351;
+	background-color:#747b36;
 }
 
 	ul.tabs-content { margin: 0; display: block; }
@@ -1245,25 +1234,25 @@ input, label {
 }
 
 .profitcalc label {
-	background-color:#523629;
-	color:#fcf7ee;
+	background-color:#9f4112;
+	color:#ffbf9f;
 	margin-bottom:5px;
 	padding-right:5px;
 	width:60%;
 	text-align:right;
 }
 .profitcalc input, .profitcalc select {
-	border:2px solid #ea7642;
+	border:2px solid #5e1406;
 }
 
 input[readonly] {
- background-color:#ea7642 !important;
- color:#fcf7ee;
+ background-color:#5e1406 !important;
+ color:#dcdcdc;
 }
 
 .address h1 {
 	font-size:1em;
-	color:#fcf7ee;
+	color:#ffffff;
 }
 
 .rev_slider_wrapper {
@@ -1293,6 +1282,18 @@ input[readonly] {
 .company-images {
 	position: absolute;
 bottom: 10px;
+}
+
+.sub-menu-bgbar {
+  position: absolute;
+  top:60px;
+  left:0px;
+  width:100%;
+  padding:5px 0;
+  z-index:98;
+  display:none;
+  background-color: #fff;
+  color:transparent;
 }
 
 .product-title, .entry-title {
@@ -1325,7 +1326,7 @@ bottom: 10px;
 #archive-title {
 	margin-top:50px;
 	width:100%;
-	color:#523629;
+	color:#2e1b12;
 }
 
 #archive-title h1 {
@@ -1341,46 +1342,6 @@ bottom: 10px;
 	max-width:700px;
 	margin-left:auto;
 	margin-right:auto;
-}
-
-.recipe-container {
-	max-width:814px;
-}
-
-.recipe-category {
-	padding-left:20px;
-}
-
-.recipe-category h2 {
-	font-weight:bold;
-}
-
-.recipe {
-	background:rgba(255,255,255,.75);
-	overflow:auto;
-	margin-bottom:10px;
-	padding:20px;
-	
-	color:#561100;
-	font-size:.9em;
-	
-	-moz-box-shadow: 3px 0px 5px 1px rgba(0,0,0,.38);
-	-webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
-	box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
-}
-
-.recipe .four img {
-	border:1px solid #ccc;	
-}
-
-.recipe-title {
-	margin-bottom:5px;
-	font-weight:bold;
-	color: #ea7642;
-}
-
-.recipe .eight {
-	padding-top:50px;
 }
 
 .entry-content {
@@ -1420,7 +1381,7 @@ bottom: 10px;
 	border:3px solid rgba(166,166,166,.5) !important;
 	behavior: url("../../wp-content/themes/skeleton/PIE.htc");
 	width:200px;
-	color: #523629; 
+	color: #2e1b12; 
 	margin-bottom: 100px;
 	padding:20px;	
 	white-space:normal !important;
@@ -1437,7 +1398,7 @@ bottom: 10px;
 	
 	#tabs-wrap {
 	 background:url('images/tabs_bg.jpg') repeat top left;	
-	 border-top:3px solid #ef6223;
+	 border-top:3px solid #506c23;
 	}
 
 .file-item {
@@ -1473,7 +1434,7 @@ bottom: 10px;
 }
  h1.page-title {
 	font-size:6em;
-	color:#523629;
+	color:#2e1b12;
 	text-transform:uppercase;
 	text-align:center;
 	background:url('images/header_bg.png') bottom center no-repeat;
@@ -1481,7 +1442,7 @@ bottom: 10px;
 
 h2.page-title, .page-id-36 h1, .parent-pageid-36 h1 {
 	font-size:4em;
-	color:#523629;
+	color:#2e1b12;
 	text-transform:uppercase;
 	text-align:center;
 }
@@ -1493,7 +1454,7 @@ div.page {
 	 -webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
 	 background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
 	border:3px solid rgba(166,166,166,.75) !important;
-	color: #523629;
+	color: #2e1b12;
 	margin: 40px 0;
 	padding:20px;	
 	white-space:normal !important;
@@ -1564,6 +1525,10 @@ span.news_box {
 	height:2em;
 }
 
+#post-128 a {
+	color:#9E8349;
+}
+
 .brand-tag {
 	position: absolute;
 	bottom: 5px;
@@ -1619,7 +1584,6 @@ span.news_box {
 
 #navigation .menu > .menu-item > a {
 	padding: 8px 12px 10px;
-	color: #ea7642;
 }
 #navigation .menu > .menu-item.menu-item-121 > a {
 	padding-right: 0;
@@ -1655,7 +1619,7 @@ span.news_box {
 	width: 20px;
 	height: 20px;
 	display: block;
-	background: url('images/social-orange.png') no-repeat;
+	background: url('images/social.png') no-repeat;
 }
 .social-thmb:hover {
 	opacity: 0.8;
@@ -1886,7 +1850,7 @@ h2.page-title {
 }
 
 h1.content-separator {
-	border-bottom: 2px dotted #523629;
+	border-bottom: 2px dotted #2e1b12;
 }
 .content-separator-content {
 	display: none;
@@ -2107,7 +2071,7 @@ h2.page-title {
 }
 
 h1.content-separator {
-	border-bottom: 2px dotted #523629;
+	border-bottom: 2px dotted #2e1b12;
 }
 .content-separator-content {
 	display: none;
