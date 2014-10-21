@@ -44,7 +44,14 @@ $featured_class = "featured-media";
 					endif;
 					?>
 					<div class="entry-article">
-						<?php the_content(); ?>
+						<?php
+						$ex_len = 384;
+						$content = get_the_content();
+						$content = ( strlen( $content ) > $ex_len ) ? substr($content, 0, $ex_len) . '... <a class="category-readmore" href="' . get_permalink() . '" title="Continue reading">read more</a>' : $content;
+						$content = closeTags( $content );
+						
+						echo $content;
+						?>
 					</div><!-- /.entry-article -->
 				</div><!-- /.entry -->
 				<?php
