@@ -29,10 +29,84 @@ body {
 .recipe .four img {
  border:1px solid #ccc;	
 }
+.page-id-43 .entry-content {
+	padding:0;
+	padding-top:20px;
+}
+
+h1.page-title {
+	margin-top:20px;
+}
+
+#post-43 {
+	padding:0;
+}
+
+#post-43 .entry-content > p {
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.recipe-container {
+	max-width:814px;
+}
+
+.recipe-category {
+	padding-left:20px;
+}
+
+.recipe-category h2 {
+	font-weight:bold;
+}
+
+.recipe {
+	background:rgba(255,255,255,.75);
+	overflow:auto;
+	margin-bottom:10px;
+	padding:20px;
+	
+	color:#561100;
+	font-size:.9em;
+	
+	-moz-box-shadow: 3px 0px 5px 1px rgba(0,0,0,.38);
+	-webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
+}
+.recipe .four p {
+	color:#a82200;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+.recipe .eight {
+	padding-top:50px;
+}
+
+.recipe a {
+	color:#ff671b;
+}
+/*#rc-buttons a:before {
+	background: none;
+}
+#rc-buttons a:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width:156px;
+	background: rgba(0,0,0, 0.2);
+	-moz-transition: background .1s linear;
+	-webkit-transition: background .1s linear;
+	-o-transition: background .1s linear;
+	transition: background .1s linear;
+}*/
 
 </style>
 
-<div class="fourteen columns offset-by-one page-fullWidth">
+<div class="fourteen columns offset-by-one">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -49,7 +123,7 @@ body {
                      
 						
 
-					<div class="entry-content center-children">
+					<div class="entry-content">
 						<?php the_content(); ?>
 						
                             <div class="container recipe-container">
@@ -61,7 +135,7 @@ body {
 										{
 												echo '<div class="recipe">
                                     <div class="four columns">
-                                            <p class="recipe-title">'. $row['title'].'</p>
+                                            <p>'. $row['title'].'</p>
                                         <img src="'. $row['thumbnail'].'" />
                                     </div>
                                     <div class="eight columns">';
